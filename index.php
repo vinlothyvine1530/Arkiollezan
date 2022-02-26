@@ -237,7 +237,7 @@ function check_input($data) {
 						<div class="booking-cta">
 							<h3>CEBU TECHNOLOGICAL UNIVERSITY</h3>
  							<p> A Premier, Multidisciplinary, Technological University.
-							mao ni ang among ge usab balik kay nag ka conflict ganina
+					
 							</p>
 						</div>
 					</div>
