@@ -1,0 +1,8 @@
+Must-do
+
+1. Ang student kay maka-view
+bahalag wala makasign-in
+index.php
+- Dashboard (Services offered by the nurse) 
+(Contacts) 
+(Available medicines) (About us) 
