@@ -235,9 +235,9 @@ function check_input($data) {
 				<div class="row">
 					<div class="col-md-7 col-md-push-5">
 						<div class="booking-cta">
-							<h3>CEBU TECHNOLOGICAL UNIVERSITY</h3>
+							<h3>jakol buang</h3>
  							<p> A Premier, Multidisciplinary, Technological University.
-					mienzan nakit an ni nimo?? nawala na error
+					
 							</p>
 						</div>
 					</div>
