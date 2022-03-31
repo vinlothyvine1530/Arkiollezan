@@ -101,7 +101,7 @@ function check_input($data) {
 
 #booking {
 	font-family: 'Montserrat', sans-serif;
-	background-image: url('pictures/ctu.jpg');
+	background-image: url('pictures/clinic.jpg');
 	background-size: cover;
 	background-position: center;
 }
@@ -113,12 +113,12 @@ function check_input($data) {
 	right: 0;
 	bottom: 0;
 	top: 0;
-	background: rgba(47, 103, 177, 0.6);
+	background: rgba(110, 122, 147, 0.6);
 }
 
 .booking-form {
-	background-color: #fff;
-	padding: 50px 20px;
+	background-color: #EAF2F7;
+	padding: 40px 20px;
 	-webkit-box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.3);
 	box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.3);
 	border-radius: 4px;
@@ -131,7 +131,7 @@ function check_input($data) {
 }
 
 .booking-form .form-control {
-	background-color: #ebecee;
+	background-color: #C5DACB;
 	border-radius: 4px;
 	border: none;
 	height: 40px;
@@ -194,7 +194,7 @@ function check_input($data) {
 .booking-form .submit-btn {
 	display: inline-block;
 	color: #fff;
-	background-color: #1e62d8;
+	background-color: #158434;
 	font-weight: 700;
 	padding: 14px 30px;
 	border-radius: 4px;
@@ -215,15 +215,25 @@ function check_input($data) {
 
 .booking-cta h3 {
 	font-size: 32px;
-	text-transform: uppercase;
+	/*text-transform: uppercnase;*/
 	color: #fff;
 	font-weight: 700;
 }
 
 .booking-cta p {
-	font-size: 16px;
+	font-size: 20px;
 	color: rgba(255, 255, 255, 0.8);
+
 }
+
+.text-center
+{
+	font-weight: bold;
+	font-size: 30px;
+}
+
+
+
 	</style>
 		
 </head>
@@ -235,15 +245,20 @@ function check_input($data) {
 				<div class="row">
 					<div class="col-md-7 col-md-push-5">
 						<div class="booking-cta">
-							<h3>fish cracker lami</h3>
+
+							<h3>CEBU TECHNOLOGICAL UNIVERSITY Naga Extension Campus</h3>
+ 							<p> A Premier, Multidisciplinary, Technological University. IMmongmama
+
+	
  							<p> A Premier, Multidisciplinary, Technological University.
+
 					
 							</p>
 						</div>
 					</div>
 					<div class="col-md-4 col-md-pull-7">
 						<div class="booking-form">
-						<div class="text-center"><img src="pictures/ctulogo.png" height="10%" width="10%"> Log in to CTU Naga Clinic.</div>
+						<div class="text-center" > Log in</div>
 							<form method="POST" action="#">
 		<center>
 		<! this is a php message error starts here !>	
@@ -268,7 +283,7 @@ function check_input($data) {
 									<input class="form-control" placeholder="Enter Your Password" id="pass" name="password" type="password" value="" required>
 								</div>
 								<div class="form-btn">
-									<button class="submit-btn" name="login">Log In</button>
+									<button class="submit-btn" name="login">Submit</button>
 								</div>
 							</form>
 						</div>
