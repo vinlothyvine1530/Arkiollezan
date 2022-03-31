@@ -182,7 +182,7 @@ if(isset($_SESSION['active'])){
     <footer class="sticky-footer">
       <div class="container">
         <div class="text-center">
-          <small>Kausaban 101</small>
+          <small>Arkiollezan @ 2021-2022</small>
         </div>
       </div>
     </footer>
