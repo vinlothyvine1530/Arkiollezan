@@ -235,7 +235,7 @@ function check_input($data) {
 				<div class="row">
 					<div class="col-md-7 col-md-push-5">
 						<div class="booking-cta">
-							<h3>jakol buang</h3>
+							<h3>fish cracker lami</h3>
  							<p> A Premier, Multidisciplinary, Technological University.
 					
 							</p>
