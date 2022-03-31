@@ -118,7 +118,7 @@ function check_input($data) {
 
 .booking-form {
 	background-color: #fff;
-	padding: 50px 20px;
+	padding: 40px 20px;
 	-webkit-box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.3);
 	box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.3);
 	border-radius: 4px;
@@ -215,7 +215,7 @@ function check_input($data) {
 
 .booking-cta h3 {
 	font-size: 32px;
-	text-transform: uppercase;
+	/*text-transform: uppercnase;*/
 	color: #fff;
 	font-weight: 700;
 }
@@ -224,6 +224,9 @@ function check_input($data) {
 	font-size: 16px;
 	color: rgba(255, 255, 255, 0.8);
 }
+
+
+
 	</style>
 		
 </head>
@@ -243,7 +246,7 @@ function check_input($data) {
 					</div>
 					<div class="col-md-4 col-md-pull-7">
 						<div class="booking-form">
-						<div class="text-center"><img src="pictures/ctulogo.png" height="10%" width="10%"> Log in to CTU Naga Clinic.</div>
+						<div class="text-center"><img src= "new.png" height="28%" width="28%" > Log in here</div>
 							<form method="POST" action="#">
 		<center>
 		<! this is a php message error starts here !>	
