@@ -249,7 +249,7 @@ function check_input($data) {
 							<h3>CEBU TECHNOLOGICAL UNIVERSITY Naga Extension Campus</h3>
  							<p> A Premier, Multidisciplinary, Technological University. IMmongmama
 
-							<h3>fish cracker lami</h3>
+	
  							<p> A Premier, Multidisciplinary, Technological University.
 
 					
