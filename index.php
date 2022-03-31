@@ -113,11 +113,11 @@ function check_input($data) {
 	right: 0;
 	bottom: 0;
 	top: 0;
-	background: rgba(47, 103, 177, 0.6);
+	background: rgba(110, 122, 147, 0.6);
 }
 
 .booking-form {
-	background-color: #fff;
+	background-color: #E3DE9F;
 	padding: 40px 20px;
 	-webkit-box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.3);
 	box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.3);
@@ -221,8 +221,15 @@ function check_input($data) {
 }
 
 .booking-cta p {
-	font-size: 16px;
+	font-size: 20px;
 	color: rgba(255, 255, 255, 0.8);
+
+}
+
+.text-center
+{
+	font-weight: bold;
+	font-size: 30px;
 }
 
 
@@ -246,7 +253,7 @@ function check_input($data) {
 					</div>
 					<div class="col-md-4 col-md-pull-7">
 						<div class="booking-form">
-						<div class="text-center"><img src= "new.png" height="28%" width="28%" > Log in here</div>
+						<div class="text-center" > Log in</div>
 							<form method="POST" action="#">
 		<center>
 		<! this is a php message error starts here !>	
