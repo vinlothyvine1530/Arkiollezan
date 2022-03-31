@@ -250,7 +250,7 @@ function check_input($data) {
  							<p> A Premier, Multidisciplinary, Technological University. IMmongmama
 
 	
- 							<p> A Premier, Multidisciplinary, Technological University.
+ 						<p>Kang mienzan ni nga changes.</p>
 
 					
 							</p>
