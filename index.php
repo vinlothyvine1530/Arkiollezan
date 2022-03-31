@@ -250,16 +250,7 @@ function check_input($data) {
 					
 
 							<h3>CEBU TECHNOLOGICAL UNIVERSITY Naga Extension Campus</h3>
- 							<p> A Premier, Multidisciplinary, Technological University.
-
-	
- 							<p> A Premier, Multidisciplinary, Technological University.
-							
-
-
-
-					
-							</p>
+ 							<p> A Premier, Multidisciplinary, Technological University.</p>
 						</div>
 					</div>
 					<div class="col-md-4 col-md-pull-7">
