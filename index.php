@@ -101,7 +101,7 @@ function check_input($data) {
 
 #booking {
 	font-family: 'Montserrat', sans-serif;
-	background-image: url('pictures/ctu.jpg');
+	background-image: url('pictures/clinic.jpg');
 	background-size: cover;
 	background-position: center;
 }
@@ -117,7 +117,7 @@ function check_input($data) {
 }
 
 .booking-form {
-	background-color: #E3DE9F;
+	background-color: #EAF2F7;
 	padding: 40px 20px;
 	-webkit-box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.3);
 	box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.3);
@@ -131,7 +131,7 @@ function check_input($data) {
 }
 
 .booking-form .form-control {
-	background-color: #ebecee;
+	background-color: #C5DACB;
 	border-radius: 4px;
 	border: none;
 	height: 40px;
@@ -194,7 +194,7 @@ function check_input($data) {
 .booking-form .submit-btn {
 	display: inline-block;
 	color: #fff;
-	background-color: #1e62d8;
+	background-color: #158434;
 	font-weight: 700;
 	padding: 14px 30px;
 	border-radius: 4px;
@@ -278,7 +278,7 @@ function check_input($data) {
 									<input class="form-control" placeholder="Enter Your Password" id="pass" name="password" type="password" value="" required>
 								</div>
 								<div class="form-btn">
-									<button class="submit-btn" name="login">Log In</button>
+									<button class="submit-btn" name="login">Submit</button>
 								</div>
 							</form>
 						</div>
