@@ -254,8 +254,8 @@ function check_input($data) {
 
 	
  							<p> A Premier, Multidisciplinary, Technological University.
-							<p> lami ang peshkraker	 jud kaayo kaayo
-								
+							<p> lami ang peshkraker	 jud kaayo kaayo kaayo
+
 
 					
 							</p>
