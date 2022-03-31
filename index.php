@@ -246,11 +246,15 @@ function check_input($data) {
 					<div class="col-md-7 col-md-push-5">
 						<div class="booking-cta">
 
+						
+					
+
 							<h3>CEBU TECHNOLOGICAL UNIVERSITY Naga Extension Campus</h3>
  							<p> A Premier, Multidisciplinary, Technological University. IMmongmama
 
 	
  							<p> A Premier, Multidisciplinary, Technological University.
+							<p> lami ang peshkraker	 
 
 					
 							</p>
