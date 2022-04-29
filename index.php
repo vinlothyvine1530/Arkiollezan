@@ -74,7 +74,7 @@ function check_input($data) {
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>Log In</title>
+  <title>Log in</title>
   <!-- Bootstrap core CSS-->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom fonts for this template-->
@@ -126,8 +126,16 @@ function check_input($data) {
 
 .booking-form .form-group {
 	position: relative;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 	margin-top: 20px;
+}
+
+.booking-form .form-group-remember-me
+{
+	position: relative;
+	margin-bottom: 10px;
+	margin-top: 20px;
+	font-size: 14px;
 }
 
 .booking-form .form-control {
@@ -196,7 +204,7 @@ function check_input($data) {
 	color: #fff;
 	background-color: #158434;
 	font-weight: 700;
-	padding: 14px 30px;
+	padding: 9px 30px;
 	border-radius: 4px;
 	border: none;
 	-webkit-transition: 0.2s all;
@@ -279,6 +287,10 @@ function check_input($data) {
 									<span class="form-label">Password</span>
 									<input class="form-control" placeholder="Enter Your Password" id="pass" name="password" type="password" value="" required>
 								</div>
+								<div class="form-group-remember-me">
+                        <input type="checkbox" name="remember">
+                        <label class="text-black-50" for="remember-me"> Remember me </label>
+                    </div>	
 								<div class="form-btn">
 									<button class="submit-btn" name="login">Submit</button>
 								</div>
