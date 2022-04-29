@@ -189,7 +189,7 @@ if(isset($_SESSION['active'])){
 	  
       <ul class="navbar-nav ml-auto">		        
         <li class="nav-item">
-           <a class="navbar-brand" href="#">Welcome to CTU-Naga Clinic!</a>
+           <a class="navbar-brand" href="#">Naga Extension Campus Clinic</a>
         </li>
       </ul>
     </div>
@@ -292,7 +292,6 @@ Add a Student Information
            ?> 
          <select name="course_id" class="form-control" required>
 		 
- 		 <!-- If e-update ang course di-ari mugawas starts here-->
 		 <?php
            $res=mysqli_query($link,"select * from course WHERE course_id=$course_id");
 		   $divina=mysqli_fetch_array($res);
@@ -306,7 +305,6 @@ Add a Student Information
 		  <!-- If e-update ang course di-ari mugawas ends here-->
 		   
 		   
-		  <!-- If mo choose ug course di-ari mugawas starts here-->
            <?php
            $res=mysqli_query($link,"select * from course order by course_name asc");
            while($row=mysqli_fetch_array($res))

@@ -7,10 +7,11 @@ $pdf = new FPDF();
 ///var_dump(get_class_methods($pdf));
 
 $pdf->AddPage();
-$pdf->Image('pictures/logo.jpg',5,8,40,24,'JPG');
-$pdf->Image('pictures/asean.jpg',165,8,30,25,'JPG');
+$pdf->Image('pictures/new.jpg',25,10,23,20,'JPG');
+$pdf->Image('pictures/asean.jpg',20,20,20,10,'JPG');
+
 $pdf->SetFont('Arial','',12);
-$pdf->Cell(50,80,'Date:'.date('d-m-Y').'',0,"R");
+$pdf->Cell(50,80,'Date: ' .date('d / m / Y').'',0,"R");
 $pdf->Multicell(80,5,"Republic of the Philippines\nCEBU TECHNOLOGICAL UNIVERSITY\nNaga Extension Campus\nMEDICAL CLINIC",0,"C");
 $pdf->Ln(25);
 $pdf->SetFont('Arial','B',10);
@@ -34,7 +35,7 @@ $no=0;
 while($row = mysqli_fetch_array($result)){
 	$no=$no+1;
 	$pdf->Ln(8);
-	$pdf->SetFont('Arial','',12);
+	$pdf->SetFont('Arial','',10);
 	$pdf->Cell(10,8,$no,1);
 	$pdf->Cell(30,8,$row['medicine_name'],1);
 	$pdf->Cell(30,8,$row['prescription'],1);

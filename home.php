@@ -82,7 +82,7 @@ if(isset($_SESSION['active'])){
 	  
       <ul class="navbar-nav ml-auto">		        
         <li class="nav-item">
-           <a class="navbar-brand" href="#">Welcome to CTU-Naga Clinic!</a>
+           <a class="navbar-brand" href="#">Naga Extension Campus Clinic</a>
         </li>
       </ul>
     </div>
@@ -195,7 +195,7 @@ if(isset($_SESSION['active'])){
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Leaving already?</h5>
             <button class="close" type="button" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">×</span>
             </button>

@@ -160,7 +160,7 @@ function check_input($data) {
 <footer class="page-footer font-small blue fixed-bottom" style="background-color: #e9ecef">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3"><small>© 2021 Copyright: De Jesus D.</small>
+  <div class="footer-copyright text-center py-3"><small>Arkiollezan @ 2021-2022</small>
   </div>
   <!-- Copyright -->
 

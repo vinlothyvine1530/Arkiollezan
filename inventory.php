@@ -110,7 +110,7 @@ if(isset($_SESSION['active'])){
 	  
       <ul class="navbar-nav ml-auto">		        
         <li class="nav-item">
-           <a class="navbar-brand" href="#">Welcome to CTU-Naga Clinic!</a>
+           <a class="navbar-brand" href="#">Naga Extension Campus Clinic</a>
         </li>
       </ul>
     </div>
