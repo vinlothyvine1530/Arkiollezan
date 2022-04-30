@@ -239,7 +239,41 @@ function check_input($data) {
 	font-weight: bold;
 	font-size: 30px;
 }
-
+      html{
+        scroll-behavior: smooth;
+      }
+      .parallax {
+        /* The image used */
+        background-image: url("Z");
+        /* Set a specific height */
+        min-height: 700px; 
+        /* Create the parallax scrolling effect */
+        background-attachment: absolute;
+        background-position: center;
+        background-positgb(28, 28, 28);
+      } */
+      /* @media (max-width: 500px)
+      {
+        #sample{
+          z-index: 1;
+        }
+      } */ion: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }p,h3,h4,h5,tr,td,a,b,h1{
+        font-family: 'Roboto', sans-serif !important; 
+      }
+      #userloginbtn:hover{
+        background-color: rgb(231, 10, 10) !important;
+      }
+      #username:focus{
+        transform: 0.5s;
+        border-bottom: 2px solid orangered !important;
+      }
+      #password:focus{
+        transform: 0.5s;
+        border-bottom: 2px solid orangered !important;
+      }
 
 
 	</style>
@@ -247,6 +281,36 @@ function check_input($data) {
 </head>
 
 <body>
+
+<!--NAVIGATION BAR-->
+<nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: rgb(72 72 72 / 24%);">
+  <div class="container">
+    <a class="navbar-brand" href="index.php">
+		<!-- diri e butang ang logo-->
+          <img src=".." alt="" width="" height="">
+        </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#home">Home
+                <span class="sr-only">(current)</span>
+              </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#consult us">Consult Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#available medicines">Available Medicines</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
 	<div id="booking" class="section">
 		<div class="section-center">
 			<div class="container">
@@ -301,6 +365,20 @@ function check_input($data) {
 			</div>
 		</div>
 	</div>
+
+	<div class="container-fluid" style="background-color: rgb(222, 223, 225)" id="about">
+    <div class="container"><br>
+      <center><h3 style="color: blue;">CONSULT US</h3></center><br>
+        <div class="row">
+         
+            <div class="col-md-7">
+            
+             
+            </div>            
+        </div>
+    </div>
+</div>
+
 </body>
 
 </html>
