@@ -15,8 +15,8 @@ if(isset($_POST['submit'])){
      $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
      $mail->Port = 587;     
 
-     $mail->setFrom('vinlothyvine@gmail.com', 'Mailer');
-      $mail->addAddress('systemclinic21@gmail.com', 'User');  
+     $mail->setFrom('vinlothyvine@gmail.com', 'Mailer'); //mao ni ang mosend sa gmail
+      $mail->addAddress('systemclinic21@gmail.com', 'User');  //kani ang makadawat ug email sa  gmail
      //$mail->addReplyto($_POST['email'],$_POST['name']);
      
 

@@ -150,7 +150,8 @@ if (isset($_SESSION['message'])): ?>
         echo '<td>'. $row['middlename'].'</td>';
         echo '<td>'. $row['gender'].'</td>';
         echo '<td>'. $row['STUDENT COURSE'].'</td>';
-        echo '<td> <a  type="button" class="btn btn-success" href="view.php?view='.$row['idnumber'] . '"> VIEW </a></td> ';	
+        echo '<td> <a  type="button" class="btn btn-success" href="view.php?view='.$row['idnumber'] . '"> VIEW </a> ';	
+        echo '<a type="button" class="btn btn-xs btn-danger" href="del.php?type=people&delete & id=' . $row['idnumber'] . '">DELETE </a></td>';
 	  echo '</tr> ';
 	  ?>
 	    
@@ -181,7 +182,7 @@ if (isset($_SESSION['message'])): ?>
     <footer class="sticky-footer">
       <div class="container">
         <div class="text-center">
-          <small>Copyright © De Jesus D. 2021</small>
+          <small>Arkiollezan @ 2021-2022</small>
         </div>
       </div>
     </footer>
