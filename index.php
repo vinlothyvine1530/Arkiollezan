@@ -328,7 +328,7 @@ function check_input($data) {
 		
 </head>
 
-<body>
+<body id="home">
 
 <!--NAVIGATION BAR-->
 <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: rgb(72 72 72 / 24%);">
@@ -348,7 +348,7 @@ function check_input($data) {
               </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#consult us">Consult Us</a>
+          <a class="nav-link" href="#consultus">Consult Us</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#available medicines">Available Medicines</a>
@@ -415,8 +415,8 @@ function check_input($data) {
 	</div>
 
 	
-			
-	<div class="container" class="bg-black">
+	<div class="container-fluid" style="padding-top: 2%;" id="consultus">		
+	<div class="container">
     <div class="row justify-content-center">
       <div class="col-md-4 mt-5 bg-light rounded">
          <h1 class="text-center font-weight-bold text-primary">Consult Us</h1>
@@ -487,6 +487,7 @@ function check_input($data) {
         </form>
      </div>
    </div>
+ </div>
  </div>
             
              
