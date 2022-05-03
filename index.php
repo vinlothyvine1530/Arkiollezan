@@ -1,4 +1,41 @@
 <?php
+
+
+$result="";
+
+if(isset($_POST['submit'])){
+  require 'PHPMailer/PHPMailer-5.2-stable/PHPMailerAutoload.php';
+     $mail = new PHPMailer;
+
+     $mail->isSMTP();                                      // Set mailer to use SMTP
+     $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+     $mail->SMTPAuth = true;                               // Enable SMTP authentication
+     $mail->Username = 'systemclinic21@gmail.com';                 // SMTP username
+     $mail->Password = 'AG2ASFNasdafa**12345';                           // SMTP password
+     $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+     $mail->Port = 587;     
+
+     $mail->setFrom('vinlothyvine@gmail.com', 'Mailer');
+      $mail->addAddress('systemclinic21@gmail.com', 'User');  
+     //$mail->addReplyto($_POST['email'],$_POST['name']);
+     
+
+    $mail->isHTML(true);
+   // $mail->Subject = 'Form Submission: '.$_POST['subject'];
+     $mail->Subject = 'Consultation';
+    $mail->Body='<h1 align=center> Date & Time: ' .$_POST['dateandtime']. '<br> Name: '.$_POST['name']. '<br> Email: '.$_POST['email']. '<br> Course/Year/Section: '.$_POST['courseyear']. '<br> Age/Sex: '.$_POST['agesex']. '<br> Complain(s): '.$_POST['complain'].'</h1>';
+
+
+    if(!$mail->send()) {
+      $result="Something went wrong. Please try again.";
+  } else {
+    $result="Thank You ".$_POST['name']." for consulting us. We'll get back to you soon!";
+  }
+
+     }
+?>
+
+<?php
 $mysqli = new mysqli('localhost', 'root', '', 'capstone') or die (mysqli_error($mysqli));
 session_start();
 if(isset($_SESSION["active"]) && $_SESSION["status"]=='admin'){
@@ -69,6 +106,17 @@ function check_input($data) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+<meta charset="UTF-8">
+  <meta name="author" content="Sahil Kumar">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Consult Us</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+
+
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -366,12 +414,80 @@ function check_input($data) {
 		</div>
 	</div>
 
-	<div class="container-fluid" style="background-color: rgb(222, 223, 225)" id="about">
-    <div class="container"><br>
-      <center><h3 style="color: blue;">CONSULT US</h3></center><br>
-        <div class="row">
-         
-            <div class="col-md-7">
+	
+			
+	<div class="container" class="bg-black">
+    <div class="row justify-content-center">
+      <div class="col-md-4 mt-5 bg-light rounded">
+         <h1 class="text-center font-weight-bold text-primary">Consult Us</h1>
+        <hr class="bg-light">
+        <h5 class="text-center text-success"> <?= $result; ?> </h5>
+
+         <form action="" method="post" id="form-box" class="p-2">
+
+         <h5>Date & Time</h5>
+         <div class="form-group input-group">
+            <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fas fa-user"></i></span>
+             </div>
+            <input type="text" name="dateandtime" class="form-control" placeholder="F : MM/DD/YYYY - 00:00 AM/PM" 
+                required>
+           </div>
+
+           <h5>Name</h5>
+           <div class="form-group input-group">
+            <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fas fa-user"></i></span>
+             </div>
+            <input type="text" name="name" class="form-control" placeholder="John Doe" 
+                required>
+           </div>
+
+           <h5>Email</h5>
+           <div class="form-group input-group">
+            <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+           </div>
+             <input type="email" name="email" class="form-control" placeholder="JohnDoe@gmail.com" 
+             required>
+           </div>
+
+           <h5>Couse/Year/Section</h5>
+           <div class="form-group input-group">
+            <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fas fa-user"></i></span>
+             </div>
+            <input type="text" name="courseyear" class="form-control" placeholder="BSIT 4A - DAY" 
+                required>
+           </div>
+
+           <h5>Age/Sex</h5>
+           <div class="form-group input-group">
+            <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fas fa-user"></i></span>
+             </div>
+            <input type="text" name="agesex" class="form-control" placeholder="18 - M" 
+                required>
+           </div>
+
+           <h5>Complain(s)</h5>
+          <div class="form-group input-group">
+          <div class="input-group-prepend">
+           <span class="input-group-text"><i class="fas fa-comment-alt"></i></span>
+          </div>
+           <textarea name="complain" id="complain" class="form-control" placeholder="Write your complain here."
+          cols="30" rows="4" required></textarea>
+          </div>
+
+           <div class="form-group">
+          <input type="submit" name="submit" id="submit" class="btn btn-primary btn-block"
+          value="Send">
+          </div>
+
+        </form>
+     </div>
+   </div>
+ </div>
             
              
             </div>            
